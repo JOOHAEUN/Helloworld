@@ -11,7 +11,7 @@ public class ArrayTest {
 		System.out.print("unintialized dnum[] calues:");
 	
 	for (i=0;i<dnum.length;i++)
-		System.out.print(dnum[i]+"");
+		System.out.print(dnum[i]+" ");
 		System.out.println();
 	
 	for (i=0;i<dnum.length;i++) {
