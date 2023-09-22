@@ -11,9 +11,9 @@ public class MultiArrayTest2 {
 	
 	System.out.println(" 행의 길이는:" +twoD.length);
 	System.out.println(" 첫번째 행의 요소 수:" +twoD[0].length);
-	System.out.println(" 두번째 행의 요소 수:" +twoD[0].length);
-	System.out.println(" 세번째 행의 요소 수:" +twoD[0].length);
-	System.out.println(" 네번째 행의 요소 수:" +twoD[0].length);
+	System.out.println(" 두번째 행의 요소 수:" +twoD[1].length);
+	System.out.println(" 세번째 행의 요소 수:" +twoD[2].length);
+	System.out.println(" 네번째 행의 요소 수:" +twoD[3].length);
 	
 	int i,j,k=0;
 	for(i=0;i<twoD.length;i++)
