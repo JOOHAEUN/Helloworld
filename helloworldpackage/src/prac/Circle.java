@@ -6,6 +6,7 @@ public class Circle {
 	public int radius;
 	public String name;
 	public Circle() {
+		this(1,"random pizza");
 		
 	}
 	public Circle(int r,String n){
@@ -47,20 +48,12 @@ public class Circle {
 	public static void main(String[] args) {
 		System.out.println("Class and Objext Practice");
 		
-		Circle pizza = new Circle();
-		
-		pizza.radius=10;
-		pizza.name="Cheese Pizza";
-		
+		Circle pizza = new Circle(15,"Hawaiian pizza");
 		System.out.println(pizza.toString());
 		
-		Circle pizza2=new Circle();
-		
-		pizza2.initialize(8, "Chicago Pizza");
-		
+		Circle pizza2=new Circle();	
 		System.out.println(pizza2.toString());
 		
-		Circle pizza3 =new Circle (15,"Hawaiian Pizza");
-		System.out.println(pizza3.toString());
+		
 	}
 }
