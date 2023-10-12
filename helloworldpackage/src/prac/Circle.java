@@ -5,12 +5,14 @@ public class Circle {
 	
 	public int radius;
 	public String name;
-	public Circle() {
-		this(1,"random pizza");
+	public Circle(Circle c) {
+		this.radius = c.radius;
+		this.name=new String(c.name);
 		
 	}
 	public Circle(int r,String n){
 		this.initialize(r,n);
+		
 	}
 	
 	public void initialize(int r,String n) {
@@ -43,6 +45,8 @@ public class Circle {
 	}
 	
 	
+	
+	
 	public String toString() {
 		return "name : "+ getName()+"radius : "+getRadius();
 	}
@@ -52,8 +56,10 @@ public class Circle {
 		Circle pizza = new Circle(15,"Hawaiian pizza");
 		System.out.println(pizza.toString());
 		
-		Circle pizza2=new Circle();	
-		System.out.println(pizza2.toString());
+		Circle pizzaCopy=new Circle(pizza);	
+		System.out.println(pizzaCopy.toString());
+		
+		
 		
 		
 	}
